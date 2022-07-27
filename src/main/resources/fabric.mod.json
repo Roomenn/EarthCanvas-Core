@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "eccore",
+  "version": "${version}",
+
+  "name": "EarthCanvas: Core",
+  "description": "",
+  "authors": [
+    "Roomenn",
+    "Anaworfis"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/RdKda436ZQ"
+  },
+
+  "license": "MIT",
+  "icon": "assets/eccore/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "net.roomenn.eccore.ECCore" ],
+    "modmenu": [ "net.roomenn.eccore.api.ECCoreModMenuApiImpl" ]
+  },
+  "mixins": [
+    "eccore.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/RdKda436ZQ"
+      },
+      "badges": [ "library" ],
+      "parent": {
+        "id": "earthcanvas",
+        "name": "EarthCanvas",
+        "description": "Earth Canvas Mods",
+        "icon": "assets/eccore/icon.png"
+      }
+    }
+  }
+}

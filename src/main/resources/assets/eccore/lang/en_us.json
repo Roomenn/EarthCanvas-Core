@@ -1,0 +1,10 @@
+{
+  "modmenu.summaryTranslation.eccore": "Earth Canvas Core API",
+  "modmenu.descriptionTranslation.eccore": "Adding methods and function for EC extensions",
+
+  "text.autoconfig.eccore.title": "Earth Canvas: Core Config",
+  "text.autoconfig.eccore.option.detached_enable": "Enable the detached camera",
+  "text.autoconfig.eccore.option.offset_enable": "Enable the offset camera",
+
+  "item.eccore.test_bow": "Test Bow"
+}
