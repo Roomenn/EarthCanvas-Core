@@ -9,7 +9,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.roomenn.eccore.ECCore;
 import net.roomenn.eccore.api.ModConfig;
-import net.roomenn.eccore.utils.CameraAnimation.CameraAnimation;
+import net.roomenn.eccore.utils.cameraAnimation.CameraAnimation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;

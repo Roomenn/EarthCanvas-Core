@@ -1,4 +1,4 @@
-package net.roomenn.eccore.utils.CameraAnimation;
+package net.roomenn.eccore.utils.cameraAnimation;
 
 import it.unimi.dsi.fastutil.floats.FloatArrayList;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;

@@ -19,6 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [ "net.roomenn.eccore.ECCore" ],
+    "client": [ "net.roomenn.eccore.client.ECCoreClient"],
     "modmenu": [ "net.roomenn.eccore.api.ECCoreModMenuApiImpl" ]
   },
   "mixins": [

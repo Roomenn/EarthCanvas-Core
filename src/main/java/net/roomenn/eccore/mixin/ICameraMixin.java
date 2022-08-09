@@ -1,7 +1,7 @@
 package net.roomenn.eccore.mixin;
 
 import net.minecraft.client.render.Camera;
-import net.roomenn.eccore.utils.CameraAnimation.ICamera;
+import net.roomenn.eccore.utils.cameraAnimation.ICamera;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 

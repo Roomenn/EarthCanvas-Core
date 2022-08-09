@@ -11,7 +11,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.roomenn.eccore.ECCore;
 import net.roomenn.eccore.api.ModConfig;
-import net.roomenn.eccore.utils.CameraAnimation.CameraAnimation;
+import net.roomenn.eccore.utils.cameraAnimation.CameraAnimation;
 
 public class TestBowItem extends BowItem {
     public TestBowItem(Item.Settings settings) {

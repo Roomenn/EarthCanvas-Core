@@ -3,8 +3,8 @@ package net.roomenn.eccore.utils;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.render.Camera;
 import net.minecraft.util.math.Vec3d;
-import net.roomenn.eccore.utils.CameraAnimation.CameraAnimation;
-import net.roomenn.eccore.utils.CameraAnimation.ICamera;
+import net.roomenn.eccore.utils.cameraAnimation.CameraAnimation;
+import net.roomenn.eccore.utils.cameraAnimation.ICamera;
 
 public class Packets {
     public static void registerPacket() {

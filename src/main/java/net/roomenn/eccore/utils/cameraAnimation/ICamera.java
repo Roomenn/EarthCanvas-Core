@@ -1,4 +1,4 @@
-package net.roomenn.eccore.utils.CameraAnimation;
+package net.roomenn.eccore.utils.cameraAnimation;
 
 public interface ICamera {
     void addAnim(CameraAnimation anim);

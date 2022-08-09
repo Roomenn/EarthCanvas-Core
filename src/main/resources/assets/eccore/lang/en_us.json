@@ -6,5 +6,7 @@
   "text.autoconfig.eccore.option.detached_enable": "Enable the detached camera",
   "text.autoconfig.eccore.option.offset_enable": "Enable the offset camera",
 
-  "item.eccore.test_bow": "Test Bow"
+  "item.eccore.test_bow": "Test Bow",
+
+  "block.eccore.cutscene_block": "CutScene Monitor"
 }

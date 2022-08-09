@@ -6,9 +6,10 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin",
     "CameraMixin",
-    "ICameraMixin"
+    "ICameraMixin",
+    "ClientWorldMixin",
+    "IClientWorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

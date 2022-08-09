@@ -4,7 +4,10 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.roomenn.eccore.api.ModConfig;
+import net.roomenn.eccore.block.ModBlockEntity;
+import net.roomenn.eccore.block.ModBlocks;
 import net.roomenn.eccore.item.ModItems;
+import net.roomenn.eccore.screen.ModScreenHandlers;
 import net.roomenn.eccore.utils.Constants;
 import net.roomenn.eccore.utils.ModModelPredicateProvider;
 import net.roomenn.eccore.utils.Packets;
@@ -23,7 +26,13 @@ public class ECCore implements ModInitializer {
 
 		Constants.registerConstants();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 		ModModelPredicateProvider.registerModModels();
 		Packets.registerPacket();
+
+		ModBlockEntity.registerAllBlockEntities();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 	}
 }
