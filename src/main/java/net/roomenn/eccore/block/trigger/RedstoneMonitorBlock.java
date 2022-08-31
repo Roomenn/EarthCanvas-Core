@@ -11,25 +11,23 @@ import net.roomenn.eccore.block.ModBlockEntity;
 import net.roomenn.eccore.block.abstractBlock.MonitorBlock;
 import org.jetbrains.annotations.Nullable;
 
-public class CutSceneBlock extends MonitorBlock implements BlockEntityProvider {
+public class RedstoneMonitorBlock extends MonitorBlock implements BlockEntityProvider {
 
-    public CutSceneBlock(Settings settings) {
-        super(settings);
-    }
+
+    public RedstoneMonitorBlock(Settings settings) { super(settings); }
 
     /* BLOCK ENTITY */
-
 
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new CutSceneBlockEntity(pos, state);
+        return new RedstoneMonitorBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlockEntity.CUTSCENE_MONITOR, CutSceneBlockEntity::tick);
+        return checkType(type, ModBlockEntity.REDSTONE_MONITOR, RedstoneMonitorBlockEntity::tick);
     }
-}
 
+}

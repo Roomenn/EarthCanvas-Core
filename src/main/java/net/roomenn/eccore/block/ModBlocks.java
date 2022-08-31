@@ -10,12 +10,16 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.roomenn.eccore.ECCore;
 import net.roomenn.eccore.block.trigger.CutSceneBlock;
+import net.roomenn.eccore.block.trigger.RedstoneMonitorBlock;
 import net.roomenn.eccore.block.trigger.SensorBlock;
 import net.roomenn.eccore.item.trigger.TriggerBlockItem;
 
 public class ModBlocks {
-    public static final Block CUTSCENE_MONITOR = registerTriggerBlock("cutscene_block",
+    public static final Block CUTSCENE_MONITOR = registerTriggerBlock("cutscene_monitor",
             new CutSceneBlock(FabricBlockSettings.of(Material.AIR).strength(-1.0F, 3600000.8F).dropsNothing().nonOpaque()),
+            ItemGroup.MISC);
+    public static final Block REDSTONE_MONITOR = registerTriggerBlock("redstone_monitor",
+            new RedstoneMonitorBlock(FabricBlockSettings.of(Material.AIR).strength(-1.0F, 3600000.8F).dropsNothing().nonOpaque()),
             ItemGroup.MISC);
     public static final Block SENSOR_BLOCK = registerTriggerBlock("sensor_block",
             new SensorBlock(FabricBlockSettings.of(Material.AIR).strength(-1.0F, 3600000.8F).dropsNothing().nonOpaque()),

@@ -15,6 +15,8 @@ import net.roomenn.eccore.block.abstractBlock.MonitorBlockEntity;
 import net.roomenn.eccore.block.abstractBlock.TriggerBlock;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
 public class SensorBlock extends TriggerBlock {
     public static final EnumProperty<TriggerBlockType> TYPE = EnumProperty.of("type", TriggerBlockType.class);
 
@@ -29,17 +31,20 @@ public class SensorBlock extends TriggerBlock {
     }
 
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        SensorBlockEntity sensorEntity = (SensorBlockEntity) world.getBlockEntity(pos);
-        if (sensorEntity != null && sensorEntity.getCachedState().get(TYPE) == TriggerBlockType.CONNECTED) {
-            if (sensorEntity.monitorPos == null) return;
-            MonitorBlockEntity monitorEntity = (MonitorBlockEntity) world.getBlockEntity(sensorEntity.monitorPos);
-            if (monitorEntity != null) monitorEntity.handleTrigger(entity);
+        if (!world.isClient){
+            SensorBlockEntity sensorEntity = (SensorBlockEntity) world.getBlockEntity(pos);
+            if (sensorEntity != null && sensorEntity.getCachedState().get(TYPE) == TriggerBlockType.CONNECTED) {
+                if (sensorEntity.monitorPos == null) return;
+                MonitorBlockEntity monitorEntity = (MonitorBlockEntity) world.getBlockEntity(sensorEntity.monitorPos);
+                if (monitorEntity != null) monitorEntity.sensorTrigger(entity);
+            }
         }
     }
 
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
-        ((SensorBlockEntity) world.getBlockEntity(pos)).update();
+        if (!world.isClient)
+            ((SensorBlockEntity) Objects.requireNonNull(world.getBlockEntity(pos))).update();
     }
 
     public static Direction[] getDirections() {

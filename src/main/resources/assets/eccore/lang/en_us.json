@@ -6,7 +6,28 @@
   "text.autoconfig.eccore.option.detached_enable": "Enable the detached camera",
   "text.autoconfig.eccore.option.offset_enable": "Enable the offset camera",
 
+  "gui.eccore.monitor.logs_label": "Trigger logging",
+  "gui.eccore.monitor.no_log": "Continuous trigger (No logging)",
+  "gui.eccore.monitor.one_time_log": "One time trigger",
+  "gui.eccore.monitor.timeout_log": "Trigger timeout",
+  "gui.eccore.monitor.timeout_field": "Timeout",
+  "gui.eccore.monitor.flush_logs": "Flush the logs",
+  "gui.eccore.monitor.is_sensor": "Act as a sensor",
+  "gui.eccore.monitor.seconds": "Seconds",
+  "gui.eccore.monitor.ticks": "Ticks",
+  "gui.eccore.redstone_monitor.target_label": "Trigger target",
+  "gui.eccore.redstone_monitor.player": "Triggered by players",
+  "gui.eccore.redstone_monitor.mob": "Triggered by Mobs",
+  "gui.eccore.redstone_monitor.entity": "Triggered by all entities",
+  "gui.eccore.redstone_monitor.trigger_label": "Trigger type",
+  "gui.eccore.redstone_monitor.hold_trigger": "Triggered until release",
+  "gui.eccore.redstone_monitor.timed_trigger": "Triggered for a set time",
+  "gui.eccore.redstone_monitor.hold_timed_trigger": "Triggered until release + a set time",
+  "gui.eccore.redstone_monitor.timed_field": "Set time",
+
   "item.eccore.test_bow": "Test Bow",
 
-  "block.eccore.cutscene_block": "CutScene Monitor"
+  "block.eccore.cutscene_monitor": "CutScene Monitor",
+  "block.eccore.redstone_monitor": "Redstone Monitor",
+  "block.eccore.sensor_block": "Sensor Block"
 }
